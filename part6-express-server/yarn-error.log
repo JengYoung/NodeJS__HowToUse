@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/jae-younghwang/.nvm/versions/node/v17.3.0/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js add dotenb
+  /Users/jae-younghwang/.nvm/versions/node/v17.3.0/bin/node /usr/local/Cellar/yarn/1.22.17_2/libexec/bin/yarn.js add morgan cookie-parser express-sessio
 
 PATH: 
   /Users/jae-younghwang/.nvm/versions/node/v17.3.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jae-younghwang/.nvm/versions/node/v17.3.0/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/dotenb: Not found
+  Error: https://registry.yarnpkg.com/express-sessio: Not found
       at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:67029:18)
       at Request.self.callback (/usr/local/Cellar/yarn/1.22.17_2/libexec/lib/cli.js:140883:22)
       at Request.emit (node:events:390:28)
@@ -32,6 +32,9 @@ npm manifest:
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
+    "scripts": {
+      "start": "nodemon app"
+    },
     "dependencies": {
       "express": "^4.17.2"
     },
@@ -326,6 +329,11 @@ Lockfile:
     integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
     dependencies:
       is-obj "^2.0.0"
+  
+  dotenv@^14.3.2:
+    version "14.3.2"
+    resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-14.3.2.tgz#7c30b3a5f777c79a3429cb2db358eef6751e8369"
+    integrity sha512-vwEppIphpFdvaMCaHfCEv9IgwcxMljMw2TnAQBB4VWPvzXQLTb82jwmdOKzlEVUL3gNFT4l4TPKO+Bn+sqcrVQ==
   
   duplexer3@^0.1.4:
     version "0.1.4"
